@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #1e3c72;
+    overflow: hidden;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transform: translateY(-20px);
+}
+
+.register-box img {
+  margin-top: 20px;
+  width: 30%;
+  height: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-box .pendukung {
+  font-size: 100%;
+  padding-bottom: 10px;
+  color: #444;
+  text-align: center;
+}
+
+.register-box {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 350px;
+    height: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.register-box input {
+    width: 100%;
+    padding: 12px;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid transparent;
+    background-color: #f1f5f9;
+    color: #222;
+    transition: 0.3s;
+}
+
+.register-box input:hover {
+    border: 2px solid #1e3c72;
+}
+
+.register-box input:focus {
+    border: 2px solid #2a5298;
+    background-color: white;
+}
+
+.register-box button {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: #2a5298;
+    border: transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+    font-size: medium;
+    transition: 0.3s;
+}
+
+.register-box button:hover {
+    background-color: #16325c;
+    color: white;
+    transform: scale(1.03);
+}
+
+.register-box h1 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #1e3c72;
+}
+
+.register-box p {
+    margin-bottom: 5px;
+    text-align: left;
+    color: #333;
+}
+
+.register-box .sdh-rgs {
+    text-align: center;
+    box-sizing: border-box;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #666;
+}

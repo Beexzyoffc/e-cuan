@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>E-Cuan</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="topbar">
+
+ <div class="header-left">
+
+    <img
+      src="assets/logo.png"
+      alt="Logo"
+      class="app-logo"
+    >
+
+    <div class="header-text">
+
+      <h1>E-Cuan</h1>
+
+      <p>
+        Cara Sederhana Mengelola Uang
+      </p>
+
+    </div>
+
+  </div>
+
+      <div class="profile-box">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+          alt="profile"
+          class="profile-img"
+        >
+
+        <h3 id="profile-name">
+          Username
+        </h3>
+
+        <button
+          id="logout-btn"
+          class="logout-btn"
+        >
+          Logout
+        </button>
+
+      </div>
+
+    </header>
+
+    <section class="summary-grid">
+
+      <div class="summary-card income-card">
+        <span>Total Pemasukan</span>
+        <h2 id="income">Rp 0</h2>
+      </div>
+
+      <div class="summary-card expense-card">
+        <span>Total Pengeluaran</span>
+        <h2 id="expense">Rp 0</h2>
+      </div>
+
+      <div class="summary-card balance-card">
+        <span>Total Saldo</span>
+        <h2 id="balance">Rp 0</h2>
+      </div>
+
+    </section>
+
+    <section class="content-grid">
+
+      <div class="card">
+
+        <h2>Tambah Transaksi</h2>
+
+        <form id="transaction-form">
+
+          <div class="input-group">
+
+            <label>Nama Transaksi</label>
+
+            <input
+              type="text"
+              id="name"
+              placeholder="Contoh: Uang Saku"
+              required
+            >
+
+          </div>
+
+          <div class="input-group">
+
+            <label>Jumlah</label>
+
+            <input
+              type="number"
+              id="amount"
+              placeholder="Contoh: 100000"
+              required
+            >
+
+          </div>
+
+          <div class="input-group">
+
+            <label>Jenis</label>
+
+            <select id="type">
+
+              <option value="income">
+                Pemasukan
+              </option>
+
+              <option value="expense">
+                Pengeluaran
+              </option>
+
+            </select>
+
+          </div>
+
+          <div class="input-group">
+
+            <label>Tanggal</label>
+
+            <input
+              type="date"
+              id="date"
+              required
+            >
+
+          </div>
+
+          <button
+            type="submit"
+            class="add-btn"
+          >
+            Tambah Data
+          </button>
+
+        </form>
+
+      </div>
+
+      <div class="card">
+
+        <h2>Riwayat Transaksi</h2>
+
+        <div id="empty-message">
+          Belum ada transaksi.
+        </div>
+
+        <div class="transaction-wrapper">
+
+          <ul id="transaction-list">
+
+            <!-- transaksi otomatis dari JS -->
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <button
+      id="export-btn"
+      class="export-btn"
+    >
+      Export CSV
+    </button>
+
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
